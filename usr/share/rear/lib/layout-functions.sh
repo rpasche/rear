@@ -309,6 +309,10 @@ find_partition() {
     get_parent_components "$1" "part"
 }
 
+find_lvmvol() {
+    get_parent_components "$1" "lvmvol"
+}
+
 # Function returns partition number of partition block device name
 #
 # This function should support:
